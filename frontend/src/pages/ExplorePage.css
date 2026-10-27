@@ -1,0 +1,52 @@
+.explore-discovery-page{display:grid;gap:18px;min-width:0}
+.explore-search-section{display:grid;gap:7px;padding:0 0 15px;border-bottom:1px solid var(--color-border)}
+.explore-search-control{display:flex;align-items:center;gap:12px;min-width:0;min-height:48px;padding:0 14px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface);color:var(--color-community);transition:border-color .16s,box-shadow .16s}
+.explore-search-control:focus-within{border-color:var(--color-community);box-shadow:0 0 0 3px color-mix(in srgb,var(--color-community) 18%,transparent)}
+.explore-search-control input{flex:1;min-width:0;height:44px;border:0;outline:0;background:transparent;color:var(--color-text-primary);font:14px/1.4 'DM Sans',sans-serif}
+.explore-search-control input::placeholder{color:var(--color-text-muted)}
+.explore-search-hint{padding:3px 7px;border:1px solid var(--color-border);border-radius:6px;color:var(--color-text-muted);font-size:11px}
+.explore-search-caption{margin:0 2px;color:var(--color-text-secondary);font-size:13px}
+.explore-results-section{display:grid;gap:12px;min-width:0}
+.explore-section-heading{display:flex;align-items:end;justify-content:space-between;padding:0 2px 10px;border-bottom:1px solid var(--color-border)}
+.explore-section-kicker{display:block;margin-bottom:3px;color:var(--color-community);font-size:10px;font-weight:750;letter-spacing:1.1px}
+.explore-section-heading h2{margin:0;color:var(--color-text-primary);font:700 19px/1.3 Manrope,sans-serif;letter-spacing:-.35px}
+.explore-profile-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));align-items:stretch;gap:12px}
+.discover-profile-card{display:grid;align-content:start;gap:11px;min-width:0;padding:13px;border:1px solid var(--color-border);border-radius:13px;background:var(--color-surface);box-shadow:var(--shadow-card)}
+.discover-profile-header{display:flex;align-items:center;gap:9px;min-width:0}
+.discover-profile-identity{display:flex;align-items:center;gap:10px;flex:1;min-width:0;color:inherit;text-decoration:none;border-radius:8px}
+.discover-profile-identity:focus-visible{outline:2px solid var(--color-focus);outline-offset:3px}
+.discover-avatar{width:46px;height:46px;flex:none;background:var(--color-community-soft);color:var(--color-community)}
+.discover-profile-copy{display:grid;gap:2px;min-width:0}
+.discover-profile-copy strong,.discover-profile-copy span,.discover-profile-copy small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.discover-profile-copy strong{color:var(--color-text-primary);font-size:14px;font-weight:700}
+.discover-profile-copy span{color:var(--color-text-secondary);font-size:12px}
+.discover-profile-copy small{color:var(--color-text-muted);font-size:11px}
+.discover-follow-button{flex:none;min-width:72px;min-height:34px;padding:0 9px;border:1px solid var(--color-accent);border-radius:8px;background:var(--color-accent-soft);color:var(--color-accent);font-size:12px;font-weight:700}
+.discover-follow-button:hover:not(:disabled){background:var(--color-accent);color:var(--color-on-accent,#fff)}
+.discover-follow-button:disabled{cursor:wait;opacity:.7}
+.discover-follow-button.is-following{border-color:var(--color-message);background:var(--color-message-soft);color:var(--color-message)}
+.discover-follow-button.is-requested{border-color:var(--color-warning);background:var(--color-warning-soft);color:var(--color-warning)}
+.discover-post-previews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;min-width:0;min-height:74px;overflow:hidden;border-radius:9px}
+.discover-post-preview{position:relative;display:block;aspect-ratio:1/1;min-width:0;overflow:hidden;border:1px solid var(--color-border);border-radius:7px;background:var(--color-surface-subtle);color:var(--color-text-secondary);text-decoration:none}
+.discover-post-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .2s ease}
+.discover-post-preview:hover img{transform:scale(1.04)}
+.discover-post-preview:focus-visible{z-index:1;outline:3px solid var(--color-focus);outline-offset:-2px}
+.discover-post-preview>span{display:-webkit-box;overflow:hidden;padding:7px;font-size:10px;line-height:1.45;-webkit-box-orient:vertical;-webkit-line-clamp:4}
+.discover-preview-empty{grid-column:1/-1;display:flex;align-items:center;min-height:74px;padding:0 10px;border:1px dashed var(--color-border);border-radius:8px;color:var(--color-text-muted);font-size:12px;line-height:1.4}
+.discover-follow-prompt{margin:-2px 1px 0;color:var(--color-text-secondary);font-size:12px;font-weight:600}
+.discover-follow-prompt.is-pending{color:var(--color-warning)}
+.explore-state{margin:0;padding:12px 2px;color:var(--color-text-secondary);font-size:14px;line-height:1.5}
+.explore-state.is-error{color:var(--color-error)}
+.explore-error-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.explore-retry,.explore-load-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 13px;border:1px solid var(--color-border);border-radius:9px;background:var(--color-surface);color:var(--color-text-primary);font-size:13px;font-weight:650}
+.explore-retry:hover,.explore-load-more:hover:not(:disabled){border-color:var(--color-community);color:var(--color-community)}
+.explore-load-more{justify-self:center;margin-top:3px}
+.explore-load-more:disabled{opacity:.65;cursor:wait}
+.explore-search-posts{display:grid;gap:12px;min-width:0}
+.explore-search-posts .post-card{min-width:0}
+.explore-public-posts{margin-top:4px}
+:root[data-theme='dark'] .discover-profile-card{background:var(--color-surface);border-color:var(--color-border);box-shadow:none}
+:root[data-theme='dark'] .explore-search-control{background:var(--color-surface-subtle)}
+@media(max-width:1060px){.explore-profile-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}}
+@media(max-width:600px){.explore-discovery-page{gap:15px}.explore-search-section{padding-bottom:12px}.explore-search-control{min-height:46px;padding:0 11px}.explore-search-control input{font-size:14px}.explore-search-hint{display:none}.explore-section-heading h2{font-size:18px}.explore-profile-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:9px}.discover-profile-card{padding:11px}.explore-search-posts{gap:9px}}
+@media(max-width:360px){.discover-profile-header{gap:6px}.discover-avatar{width:40px;height:40px}.discover-follow-button{min-width:64px;padding:0 7px}.discover-profile-identity{gap:7px}}
