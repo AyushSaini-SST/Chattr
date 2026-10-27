@@ -1,0 +1,27 @@
+{
+  "name": "chattr-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.12.2",
+    "lucide-react": "^0.545.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-easy-crop": "^6.2.4",
+    "react-router-dom": "^7.9.4",
+    "socket.io-client": "^4.8.1",
+    "vite": "^7.1.9"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10"
+  }
+}

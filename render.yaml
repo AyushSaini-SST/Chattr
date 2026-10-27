@@ -1,0 +1,35 @@
+# Render Blueprint for the Chattr API.
+# Connect the repository in the Render dashboard and choose "Blueprint";
+# Render reads this file and provisions the web service. The frontend is
+# deployed separately on Vercel (see frontend/vercel.json and the README).
+services:
+  - type: web
+    name: chattr-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install --omit=dev
+    startCommand: node src/server.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        sync: false
+      - key: CLIENT_URL_ALLOWLIST
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
