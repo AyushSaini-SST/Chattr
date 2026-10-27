@@ -3,10 +3,12 @@ import { app } from './app.js';
 import { connectDatabase } from './config/database.js';
 import { env, validateRuntimeEnv } from './config/env.js';
 import { attachSocketServer } from './realtime/socketServer.js';
+import { seedDemoContent } from './services/demoSeed.js';
 
 async function start() {
   validateRuntimeEnv();
   await connectDatabase();
+  await seedDemoContent();
 
   const httpServer = createServer(app);
   attachSocketServer(httpServer);
