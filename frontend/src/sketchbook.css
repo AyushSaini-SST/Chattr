@@ -203,7 +203,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=file]),select,textarea{fo
 @media(prefers-reduced-motion:no-preference){.auth-doodles .d-plane{animation:sk-float 6s ease-in-out infinite}.auth-doodles .d-stars{animation:sk-twinkle 3s ease-in-out infinite}}
 @keyframes sk-float{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(8px,-10px) rotate(-3deg)}}
 @keyframes sk-twinkle{0%,100%{opacity:1}50%{opacity:.45}}
-.auth-quote{position:relative;font-family:var(--sk-hand);max-width:420px}
+.auth-quote{position:relative;top:12px;font-family:var(--sk-hand);max-width:420px}
 .auth-quote h2{font-size:clamp(34px,4vw,52px);line-height:1.05;margin:6px 0 10px}
 .auth-quote{font-family:var(--sk-hand)}
 .auth-quote span{color:var(--sk-muted);font-size:15px;text-transform:lowercase;letter-spacing:.5px}

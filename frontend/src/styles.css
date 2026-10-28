@@ -1093,7 +1093,7 @@ button,a,input,select,textarea,[tabindex]:not([tabindex='-1']){-webkit-tap-highl
 @media(max-width:820px){.home-content-grid,.explore-content-grid,.saved-content-grid,.notifications-content-grid,.settings-content-grid{gap:19px}.home-content-grid>.right-rail,.explore-content-grid>.right-rail,.saved-content-grid>.right-rail,.notifications-content-grid>.right-rail,.settings-content-grid>.right-rail{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.home-content-grid>.right-rail,.explore-content-grid>.right-rail,.saved-content-grid>.right-rail,.notifications-content-grid>.right-rail,.settings-content-grid>.right-rail{grid-template-columns:minmax(0,1fr)}}
 .brand-mark{position:relative;background:linear-gradient(135deg,#d4e8ff 0%,#f5dfa0 100%);color:#3978bd}
-.brand-mark-icon{position:relative;z-index:1}
+.brand-mark-icon{position:relative;z-index:1;width:26px;height:26px;overflow:visible}
 .brand-mark-gold-dot{position:absolute;right:5px;bottom:5px;width:6px;height:6px;border-radius:50%;background:#e7a900;border:1px solid #fff7dd}
 .brand-wordmark{color:#387ebc;background-image:none}
 @supports ((background-clip:text) or (-webkit-background-clip:text)){
